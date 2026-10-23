@@ -562,10 +562,18 @@ local function showContextMenu(inst, x, y)
 	contextMenu.Visible = true
 end
 
+local function isPointInFrame(frame, x, y)
+	local pos = frame.AbsolutePosition
+	local size = frame.AbsoluteSize
+	return x >= pos.X and x <= pos.X + size.X and y >= pos.Y and y <= pos.Y + size.Y
+end
+
 uis.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 then
 		if contextMenu.Visible then
-			task.defer(hideContextMenu)
+			if not isPointInFrame(contextMenu, input.Position.X, input.Position.Y) then
+				hideContextMenu()
+			end
 		end
 	end
 end)
