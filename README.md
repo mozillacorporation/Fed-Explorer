@@ -18,3 +18,4 @@ Fed Explorer offers a streamlined interface for real-time interaction with the R
 ## Contributing
 
 Contributions, issue reports, and feature proposals are welcome. Feel free to open an issue or submit a pull request to help refine and expand the tool.
+https://discord.gg/4KYxV25nqu
