@@ -11,6 +11,10 @@ Fed Explorer offers a streamlined interface for real-time interaction with the R
 * **Property & State Inspection:** View runtime property values, attributes, and object states directly during execution.
 * **Minimal Performance Impact:** Built with a lightweight footprint to preserve frame rates and minimize memory usage during active sessions.
 
+## Usage
+
+**Important Setup Step:** Before running Fed Explorer for the first time, you must extract the contents of `Fed.zip` directly into your executor's `workspace` folder. This ensures all required assets, icons, and image dependencies render correctly within the interface.
+
 ## Contributing
 
 Contributions, issue reports, and feature proposals are welcome. Feel free to open an issue or submit a pull request to help refine and expand the tool.
